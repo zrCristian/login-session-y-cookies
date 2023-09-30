@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<%- include("./components/head", {pageName: 'Inicio'}) %>
+
+
+<body class="bg-slate-800 h-screen" >
+
+    <%- include("./components/header") %>
+
+
+    <main class="grid place-content-center w-full">
+        <h1 class="text-5xl font-bold text-white my-7 text-center">Emprende con Nosotros</h1>
+
+        <section class="my-5 flex flex-col justify-center items-center">
+            <h3 class=" text-white text-3xl my-3 font-bold">Te ayudamos en SEO </h3>
+            <div class="flex justify-center">
+                <p class=" text-white flex-1 p-5 text-xl">Lorem ipsum dolor sit amet consectetur adipisicing elit.  officia id facere fuga aut cupiditate asperiores ratione eum modi, maxime harum quos? Vero, repellat. Iusto molestias quis obcaecati voluptatibus architecto incidunt earum tempora voluptatem.</p>
+                <div class="flex-1 grid place-content-center">
+                    <img src="images/chrome.svg" alt="" class="w-56">
+                </div>
+            </div>
+        </section>
+
+        
+        <section class="my-5 flex flex-col justify-center items-center">
+            <h3 class="text-white text-3xl my-3 font-bold">Cloud Hosting</h3>
+            <div class="flex justify-center">
+                <p class="text-white flex-1 p-5 text-xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, dolorem iste minima mollitia ullam, ipsum officia id facere fuga aut cupiditate asperiores ratione eum modi, maxime harum quos? Vero, repellat. Iusto molestias quis obcaecati voluptatibus architecto incidunt earum tempora voluptatem.</p>
+                <div class="flex-1 grid place-content-center">
+                    <img src="images/cloud-hosting.svg" alt="" class="w-56">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <%- include("./components/footer") %>
+
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<%- include("./components/head", {pageName: 'Login'}) %>
+
+
+<body class="bg-slate-800 h-screen" >
+    <%- include("./components/header") %>
+
+    <section class="grid place-content-center h-3/4 my-8">
+        <h1 class="text-7xl font-bold text-white">Iniciar Sesion</h1>
+        <form action="/login" method="post" class="rounded-md bg-slate-100 my-4 p-6">
+            <div class="">
+                <label for="email" class="block cursor-pointer my-1 text-zinc-700">Email</label>
+                <input id="email" type="email" name="email" placeholder="ejemplo@gmail.com" class="w-full px-1 py-2 rounded-sm">
+            </div>
+            <div class="my-5">
+                <label for="password" class="block cursor-pointer my-1  text-zinc-700">Contraseña</label>
+                <input id="password" type="password" name="password" placeholder="*********"  class="w-full px-1 py-2 rounded-sm">
+            </div>
+            
+            <div class="my-5">
+                <label for="keepUserLogger" class="block cursor-pointer my-1  text-zinc-700">Mantener la sesion iniciada</label>
+                <input id="keepUserLogger" type="checkbox" name="keepUserLogger" value="true"  class="w-full px-1 py-2 rounded-sm">
+            </div>
+
+            <button type="submit" class="bg-emerald-400 hover:bg-emerald-300 transition-colors duration-300 font-medium text-lg py-2 rounded-md w-full">Enviar</button>
+        </form>
+    </section>
+
+
+    <%- include("./components/footer") %>
+
+</body>
+</html>

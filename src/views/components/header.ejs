@@ -1,0 +1,28 @@
+<header class="bg-slate-900 flex justify-around items-center py-2">
+    <div class="cursor-pointer">
+        <a href="/" class="" >
+            <img  src="images/logo.png" alt="Boca" width="45px">
+        </a>
+
+    </div>
+
+    <nav>
+        <ul class="flex gap-7 items-center justify-center font-bold text-lg py-6 ">
+            <li class="hover:scale-105 transition-transform"><a href="#" class="text-slate-300 hover:text-slate-400 transition-colors">Nosotros</a></li>
+            <li class="hover:scale-105 transition-transform"><a href="#" class="text-slate-300 hover:text-slate-400 transition-colors">Proyectos</a></li>
+            <li class="hover:scale-105 transition-transform"><a href="#" class="text-slate-300 hover:text-slate-400 transition-colors">Contactanos</a></li>
+            <% if(!isUserLogged) { %>
+                <li class="hover:scale-105 transition-transform"><a href="/login" class="text-slate-300 hover:text-slate-400 transition-colors">Login</a></li>
+            <% } %>
+
+            <% if(isUserLogged) { %>
+                <li>
+                    <form action="/logout" method="post">
+                        <button class="bg-emerald-400 hover:bg-emerald-300 transition-colors duration-300 font-medium text-lg py-2 px-3 rounded-md w-full text-white">Logout</button>
+                    </form>
+                </li>
+            <% } %>
+
+        </ul> 
+    </nav>
+</header>
